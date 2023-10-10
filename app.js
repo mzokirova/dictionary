@@ -15,9 +15,10 @@ async function getData(word) {
 
     document.querySelector('h3').textContent = res[0].word;
     
-    spkBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
     // console.log(spkBtn)
     document.querySelector('.pron').textContent = res[0].phonetic;
+    
+    spkBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
     document.querySelector('.word-meaning').textContent = res[0].meanings[0].definitions[0].definition;
     document.querySelector('.word-example').textContent = res[0].meanings[0].definitions[0].example;
     audio.setAttribute("src", `${res[0].phonetics[0].audio}`);
