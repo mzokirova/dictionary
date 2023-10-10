@@ -15,7 +15,7 @@ async function getData(word) {
 
     document.querySelector('h3').textContent = res[0].word;
     
-    // spkBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+    spkBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
     // console.log(spkBtn)
     document.querySelector('.pron').textContent = res[0].phonetic;
     document.querySelector('.word-meaning').textContent = res[0].meanings[0].definitions[0].definition;
